@@ -1,0 +1,13 @@
+.footer-section {
+    background-color: var(--card-bg);
+    color: var(--text-secondary);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    font-style: italic;
+}

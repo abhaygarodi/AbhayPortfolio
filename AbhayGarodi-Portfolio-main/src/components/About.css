@@ -1,0 +1,82 @@
+.about-section {
+    background-color: var(--bg-color);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 800px;
+    width: 100%;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.subsection-title {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+}
+
+/* Timeline */
+.education-timeline {
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(148, 163, 184, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 2px solid var(--accent-color);
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+}
+
+.timeline-content .institution {
+    display: block;
+    color: var(--accent-color);
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.timeline-content .year,
+.timeline-content .grade {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--text-secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}

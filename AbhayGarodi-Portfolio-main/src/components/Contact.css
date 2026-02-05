@@ -1,0 +1,224 @@
+.contact-section {
+    background-color: var(--bg-color);
+    padding: 3rem 1rem;
+    min-height: 60vh;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0.5rem auto 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+.contact-form-container {
+    flex: 2;
+    min-width: 320px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode adjustment for card border */
+:global(.dark-mode) .contact-form {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+:global(.dark-mode) .form-group input,
+:global(.dark-mode) .form-group textarea {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ef4444;
+}
+
+.error-text {
+    color: #ef4444;
+    font-size: 0.8rem;
+}
+
+.submit-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.success-message {
+    padding: 0.8rem;
+    background-color: #d1fae5;
+    color: #065f46;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+:global(.dark-mode) .success-message {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+}
+
+/* Contact Info Styles */
+.contact-info-container {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-card h3 {
+    margin-bottom: 0.8rem;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.info-item .icon {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.info-item a {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.info-item a:hover {
+    color: var(--accent-color);
+}
+
+.social-links-container h3 {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.social-link:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+:global(.dark-mode) .social-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer-copyright {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+:global(.dark-mode) .footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

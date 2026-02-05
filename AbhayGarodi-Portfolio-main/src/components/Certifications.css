@@ -1,0 +1,76 @@
+.certifications-section {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-item {
+    background-color: var(--card-bg);
+    padding: 1.2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+    transition: transform 0.2s ease;
+    border: 1px solid transparent;
+}
+
+/* Leadership Section */
+.leadership-section {
+    margin-top: 4rem;
+}
+
+.subsection-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.leadership-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--card-border);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leadership-list {
+    list-style-type: none;
+}
+
+.leadership-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+.leadership-list li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.cert-item:hover {
+    transform: translateX(5px);
+    border-color: rgba(56, 189, 248, 0.3);
+    color: var(--text-primary);
+}
+
+.check-icon {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
