@@ -142,17 +142,15 @@
         right: -100%;
         top: 0;
         flex-direction: column;
-        background-color: var(--card-bg);
-        /* Use card bg for better solidity */
-        width: 85%;
-        /* Slightly wider for better readability */
+        background-color: var(--bg-color);
+        width: 100%;
         height: 100vh;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 2rem;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+        padding: 6rem 2rem 2rem;
         z-index: 1000;
+        /* Ensure solid background */
     }
 
     .nav-menu.active {
@@ -160,7 +158,7 @@
     }
 
     .nav-item {
-        margin: 1.2rem 0;
+        margin: 1rem 0;
         opacity: 0;
         transform: translateX(30px);
         transition: all 0.4s ease;
@@ -197,9 +195,8 @@
     }
 
     .nav-link {
-        font-size: 1.3rem;
-        /* Adjusted for better proportion */
-        font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 600;
         color: var(--text-primary);
     }
 

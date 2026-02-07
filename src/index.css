@@ -144,7 +144,9 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.8rem;
+  padding: 0.6rem 1.2rem;
+  min-width: 140px;
+  height: 44px;
   background-color: var(--accent-color);
   color: #ffffff;
   /* Always white text on primary button */
@@ -167,6 +169,11 @@ section {
   background-color: transparent;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
+  min-width: 140px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-outline:hover {
@@ -181,5 +188,16 @@ section {
 
   section {
     padding: 4rem 1.5rem;
+  }
+}
+
+/* Mobile Single Page View Logic */
+.mobile-only-sections {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only-sections {
+    display: block;
   }
 }

@@ -2,6 +2,15 @@ import React from 'react';
 import ScrollWrapper from './ScrollWrapper';
 import './Projects.css';
 
+const getTechColor = (tech) => {
+    const techLower = tech.toLowerCase();
+    if (techLower.includes('javascript') || techLower.includes('html') || techLower.includes('css') || techLower.includes('react')) return 'frontend';
+    if (techLower.includes('java') || techLower.includes('spring') || techLower.includes('jdbc') || techLower.includes('jwt')) return 'backend';
+    if (techLower.includes('mysql') || techLower.includes('security')) return 'backend';
+    if (techLower.includes('oops')) return 'backend';
+    return 'general';
+};
+
 const Projects = () => {
     const projectList = [
         {
@@ -45,17 +54,17 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     {projectList.map((project, index) => (
-                        <ScrollWrapper key={index} className={`stagger-${(index % 4) + 1}`}>
+                        <ScrollWrapper key={index} className={`stagger-${(index % 5) + 1}`}>
                             <div className="project-card hover-lift">
                                 <div className="project-content">
-                                    <h3>{project.title}</h3>
-                                    <p>{project.description}</p>
-                                    <div className="tech-stack">
+                                    <h3 className="project-title">{project.title}</h3>
+                                    <p className="project-description">{project.description}</p>
+                                    <div className="project-tech">
                                         {project.techStack.map((tech, i) => (
-                                            <span key={i} className="tech-tag">{tech}</span>
+                                            <span key={i} className={`tech-badge ${getTechColor(tech)}`}>{tech}</span>
                                         ))}
                                     </div>
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-glow">
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-project btn-glow">
                                         View on GitHub
                                     </a>
                                 </div>

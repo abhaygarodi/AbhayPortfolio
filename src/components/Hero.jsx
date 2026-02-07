@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { content } from '../data/content';
 import './Hero.css';
 import profileImg from '../assets/profile.jpg';
@@ -17,9 +18,15 @@ const Hero = () => {
                         Passionate Java Full Stack Developer with strong foundations in Core Java, Spring Boot, REST APIs, and modern web technologies. Experienced in building scalable backend systems and responsive front-end applications with a focus on clean code and real-world problem solving.
                     </p>
                     <div className="cta-buttons">
-                        <a href="#projects" className="btn">View Projects</a>
-                        <a href="https://drive.google.com/file/d/1shzBLS3O_wUo53PabsPn9YB2ApMJC-7Q/view?usp=drive_link" className="btn btn-outline" target="_blank" rel="noopener noreferrer">Download Resume</a>
-                        <a href="#contact" className="btn btn-outline">Contact Me</a>
+                        <Link to="/projects" className="btn btn-project btn-glow">
+                            <span style={{ position: 'relative', zIndex: 10 }}>View Projects</span>
+                        </Link>
+                        <a href="https://drive.google.com/file/d/1shzBLS3O_wUo53PabsPn9YB2ApMJC-7Q/view?usp=drive_link" className="btn btn-project btn-glow" target="_blank" rel="noopener noreferrer">
+                            <span style={{ position: 'relative', zIndex: 10 }}>Download Resume</span>
+                        </a>
+                        <Link to="/contact" className="btn btn-project btn-glow">
+                            <span style={{ position: 'relative', zIndex: 10 }}>Contact Me</span>
+                        </Link>
                     </div>
                 </div>
                 <div className="hero-visual">

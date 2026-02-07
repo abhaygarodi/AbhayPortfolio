@@ -141,38 +141,43 @@
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .hero-name {
-        font-size: 3rem;
-        line-height: 1.1;
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .hero-description {
-        margin: 0 auto 2.5rem;
+        margin: 0 auto 2rem;
         font-size: 1rem;
+        padding: 0 1rem;
     }
 
     .cta-buttons {
         justify-content: center;
         gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
     }
 
     .hero-visual {
         width: 100%;
         margin-bottom: 0;
+        justify-content: center;
     }
 
     .profile-img-container {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
     }
 }
 
