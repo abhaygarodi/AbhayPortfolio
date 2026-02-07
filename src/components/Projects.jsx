@@ -15,7 +15,7 @@ const Projects = () => {
         {
             title: "Micro-Donation for Student fees and Medical Bills",
             description: "A full-stack web application enabling secure micro-donations. Beneficiaries create campaigns, donors contribute transparently, and admins validate documents. Features role-based access and real-time tracking.",
-            techStack: ["React JS", "Spring Boot", "MySQL", "Hibernate", "JWT", "Bootstrap"],
+            techStack: ["React JS", "Spring Boot", "MySQL", "Hibernate", "JWT", "Bootstrap", "MicroServices"],
             link: "https://github.com/abhaygarodi/MicroLift"
         },
         {
